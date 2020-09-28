@@ -11,7 +11,7 @@ import UIKit
 
 struct UnsplashPhotoRecord: Codable {
     var id: String
-    var user: UnsplashUser
+//    var user: UnsplashUser
     var urls: UnsplashURLS
 }
 struct UnsplashUser: Codable {

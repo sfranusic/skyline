@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		B231CC8F251E678800EA4DBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CC8E251E678800EA4DBD /* AppDelegate.swift */; };
 		B231CC91251E678800EA4DBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CC90251E678800EA4DBD /* SceneDelegate.swift */; };
-		B231CC93251E678800EA4DBD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CC92251E678800EA4DBD /* FirstViewController.swift */; };
-		B231CC95251E678800EA4DBD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CC94251E678800EA4DBD /* SecondViewController.swift */; };
-		B231CC98251E678800EA4DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B231CC96251E678800EA4DBD /* Main.storyboard */; };
 		B231CC9A251E678A00EA4DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B231CC99251E678A00EA4DBD /* Assets.xcassets */; };
 		B231CC9D251E678A00EA4DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B231CC9B251E678A00EA4DBD /* LaunchScreen.storyboard */; };
 		B231CCA8251E678B00EA4DBD /* skylineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CCA7251E678B00EA4DBD /* skylineTests.swift */; };
 		B231CCB3251E678B00EA4DBD /* skylineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CCB2251E678B00EA4DBD /* skylineUITests.swift */; };
+		B231CCC5251EA53900EA4DBD /* UnsplashModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CCC4251EA53900EA4DBD /* UnsplashModels.swift */; };
+		B231CCC9251FA7EB00EA4DBD /* UnsplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CCC8251FA7EB00EA4DBD /* UnsplashAPI.swift */; };
+		B231CCD72521D1E600EA4DBD /* Skyline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B231CCD62521D1E600EA4DBD /* Skyline.storyboard */; };
+		B231CCD92521D2CD00EA4DBD /* secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CCD82521D2CD00EA4DBD /* secrets.swift */; };
+		B231CCDB2521D37D00EA4DBD /* SkylineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CCDA2521D37D00EA4DBD /* SkylineViewController.swift */; };
+		B231CCDD2521D4AF00EA4DBD /* SkylineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CCDC2521D4AF00EA4DBD /* SkylineTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +42,6 @@
 		B231CC8B251E678800EA4DBD /* skyline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skyline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B231CC8E251E678800EA4DBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B231CC90251E678800EA4DBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B231CC92251E678800EA4DBD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		B231CC94251E678800EA4DBD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		B231CC97251E678800EA4DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B231CC99251E678A00EA4DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B231CC9C251E678A00EA4DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B231CC9E251E678A00EA4DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +51,12 @@
 		B231CCAE251E678B00EA4DBD /* skylineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skylineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B231CCB2251E678B00EA4DBD /* skylineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skylineUITests.swift; sourceTree = "<group>"; };
 		B231CCB4251E678B00EA4DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B231CCC4251EA53900EA4DBD /* UnsplashModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashModels.swift; sourceTree = "<group>"; };
+		B231CCC8251FA7EB00EA4DBD /* UnsplashAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashAPI.swift; sourceTree = "<group>"; };
+		B231CCD62521D1E600EA4DBD /* Skyline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Skyline.storyboard; sourceTree = "<group>"; };
+		B231CCD82521D2CD00EA4DBD /* secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secrets.swift; sourceTree = "<group>"; };
+		B231CCDA2521D37D00EA4DBD /* SkylineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylineViewController.swift; sourceTree = "<group>"; };
+		B231CCDC2521D4AF00EA4DBD /* SkylineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylineTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,10 @@
 		B231CC8D251E678800EA4DBD /* skyline */ = {
 			isa = PBXGroup;
 			children = (
+				B231CCD52521D1BD00EA4DBD /* UI */,
+				B231CCD22521CF5B00EA4DBD /* Unsplash */,
 				B231CC8E251E678800EA4DBD /* AppDelegate.swift */,
 				B231CC90251E678800EA4DBD /* SceneDelegate.swift */,
-				B231CC92251E678800EA4DBD /* FirstViewController.swift */,
-				B231CC94251E678800EA4DBD /* SecondViewController.swift */,
-				B231CC96251E678800EA4DBD /* Main.storyboard */,
 				B231CC99251E678A00EA4DBD /* Assets.xcassets */,
 				B231CC9B251E678A00EA4DBD /* LaunchScreen.storyboard */,
 				B231CC9E251E678A00EA4DBD /* Info.plist */,
@@ -129,6 +134,26 @@
 				B231CCB4251E678B00EA4DBD /* Info.plist */,
 			);
 			path = skylineUITests;
+			sourceTree = "<group>";
+		};
+		B231CCD22521CF5B00EA4DBD /* Unsplash */ = {
+			isa = PBXGroup;
+			children = (
+				B231CCC8251FA7EB00EA4DBD /* UnsplashAPI.swift */,
+				B231CCC4251EA53900EA4DBD /* UnsplashModels.swift */,
+				B231CCD82521D2CD00EA4DBD /* secrets.swift */,
+			);
+			path = Unsplash;
+			sourceTree = "<group>";
+		};
+		B231CCD52521D1BD00EA4DBD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B231CCD62521D1E600EA4DBD /* Skyline.storyboard */,
+				B231CCDA2521D37D00EA4DBD /* SkylineViewController.swift */,
+				B231CCDC2521D4AF00EA4DBD /* SkylineTableViewCell.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +260,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B231CCD72521D1E600EA4DBD /* Skyline.storyboard in Resources */,
 				B231CC9D251E678A00EA4DBD /* LaunchScreen.storyboard in Resources */,
 				B231CC9A251E678A00EA4DBD /* Assets.xcassets in Resources */,
-				B231CC98251E678800EA4DBD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B231CC95251E678800EA4DBD /* SecondViewController.swift in Sources */,
-				B231CC93251E678800EA4DBD /* FirstViewController.swift in Sources */,
+				B231CCDB2521D37D00EA4DBD /* SkylineViewController.swift in Sources */,
+				B231CCD92521D2CD00EA4DBD /* secrets.swift in Sources */,
 				B231CC8F251E678800EA4DBD /* AppDelegate.swift in Sources */,
+				B231CCDD2521D4AF00EA4DBD /* SkylineTableViewCell.swift in Sources */,
+				B231CCC9251FA7EB00EA4DBD /* UnsplashAPI.swift in Sources */,
 				B231CC91251E678800EA4DBD /* SceneDelegate.swift in Sources */,
+				B231CCC5251EA53900EA4DBD /* UnsplashModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +329,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B231CC96251E678800EA4DBD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B231CC97251E678800EA4DBD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B231CC9B251E678A00EA4DBD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -10,10 +10,35 @@ import UIKit
 
 class SkylineViewController: UIViewController {
 
+    @IBOutlet var tableView: UITableView!
+    var photoRecords: [UIImage] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Set up table view delegate and data source.
+        tableView.delegate = self
+        tableView.dataSource = self
+
+        UnsplashAPI.shared.retrieveRandomPorschePhotoRecord { record in
+            if let record = record {
+                UnsplashAPI.shared.downloadImage(record: record) { image in
+                    if let image = image {
+                        self.photoRecords.append(image)
+                    }
+                }
+            }
+        }
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
     
 
@@ -27,4 +52,20 @@ class SkylineViewController: UIViewController {
     }
     */
 
+}
+extension SkylineViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        self.photoRecords.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "skylineCell", for: indexPath) as! SkylineTableViewCell
+        cell.skylineImageView.image = photoRecords[indexPath.row]
+        return cell
+    }
+
+
+}
+extension SkylineViewController: UITableViewDelegate {
+    
 }

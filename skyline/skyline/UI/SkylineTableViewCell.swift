@@ -10,6 +10,8 @@ import UIKit
 
 class SkylineTableViewCell: UITableViewCell {
 
+    @IBOutlet var skylineImageView: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
