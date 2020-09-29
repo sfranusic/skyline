@@ -37,6 +37,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="e1E-kC-vSh" secondAttribute="trailing" id="ahb-wq-DbH"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" label="photoCell"/>
                                         <connections>
                                             <outlet property="skylineImageView" destination="e1E-kC-vSh" id="1h4-nD-Dwu"/>
                                         </connections>

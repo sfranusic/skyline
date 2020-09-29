@@ -30,6 +30,9 @@ class SkylineViewController: UIViewController {
         tableView.dataSource = self
         tableView.prefetchDataSource = self
 
+        // Set up accessibility identifier for UI testing.
+        tableView.accessibilityIdentifier = "mainTableView"
+
         // Load initial page.
         loadPhotos()
     }
