@@ -9,9 +9,18 @@
 import Foundation
 import UIKit
 
-struct UnsplashPhotoRecord: Codable {
+struct UnsplashSearchPage: Codable {
+    var total: Int
+    var total_pages: Int
+    var results: [UnsplashPhotoRecord]
+}
+struct UnsplashPhotoRecord: Codable, Equatable {
+    static func == (lhs: UnsplashPhotoRecord, rhs: UnsplashPhotoRecord) -> Bool {
+        lhs.id == rhs.id
+    }
+
     var id: String
-//    var user: UnsplashUser
+    var user: UnsplashUser
     var urls: UnsplashURLS
 }
 struct UnsplashUser: Codable {

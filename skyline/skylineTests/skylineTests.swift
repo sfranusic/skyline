@@ -19,9 +19,15 @@ class skylineTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testGetPhotoURL() throws {
+        UnsplashAPI.shared.getPage { page in
+            if let page = page {
+                let url = URL(string: page.results.first?.urls.small ?? "")
+                XCTAssert(url != nil, "Download URL should not be nil.")
+            } else {
+                XCTAssert(page != nil, "Page response should not be nil.")
+            }
+        }
     }
 
     func testPerformanceExample() throws {
